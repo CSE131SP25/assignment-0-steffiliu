@@ -29,11 +29,70 @@ public class RobotInstructions  {
 		 * You will add instructions at the end of the code to cause the support.robot to move
 		 * as you desire.
 		 */
-		robot.forward(60);
-		robot.turnLeft(90);
-		robot.forward(23);
-		robot.turnRight(90);
+		robot.forward(120);
+		//robot.forward(60);
+		int x = 0;
+		int y = 8;
+		int u = 0;
+		int d = 0;
+		while (x < 10)
+		{
+			robot.turnLeft(90);
+			robot.forward(15);
+			robot.turnRight(90);
+			robot.forward(15);
+			x++;
+		}
 		robot.forward(80);
+	
+			while(y>4)
+			{
+			robot.turnRight(90);
+			robot.forward(15);
+			robot.turnLeft(90);
+			robot.forward(15);
+			y--;
+			}
+			robot.turnRight(90);
+			robot.forward(30);
+		 while(y<=4 && y>=0)
+		{
+			robot.turnRight(90);
+			robot.forward(15);
+			robot.turnLeft(90);
+			robot.forward(15);
+			y--;
+		}
+		 robot.turnLeft(90);
+		 robot.forward(15);
+		 while(u<4)
+			{
+			robot.turnRight(90);
+			robot.forward(15);
+			robot.turnLeft(90);
+			robot.forward(15);
+			u++;
+			}
+		 robot.turnRight(90);
+		 robot.forward(30);
+		 while(u>=4 && u<8)
+			{
+				robot.turnRight(90);
+				robot.forward(15);
+				robot.turnLeft(90);
+				robot.forward(15);
+				u++;
+			}
+		 robot.turnRight(90);
+			robot.forward(95);
+			while (d < 11)
+			{
+				robot.turnRight(90);
+				robot.forward(15);
+				robot.turnLeft(90);
+				robot.forward(15);
+				d++;
+			}
 	}
 
 }
